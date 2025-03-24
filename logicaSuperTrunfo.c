@@ -7,7 +7,6 @@
 
 int main() {
     // Definição das variáveis para armazenar as propriedades das cidades
-    // Você pode utilizar o código do primeiro desafio
 
     char Estado1;
     char CodigoCarta1[3];
@@ -18,7 +17,7 @@ int main() {
     int pontosTuristicos1;
     float DensidadePopulacional1;
     double PibPerCapita1;
-    float SuperPoder1;
+ 
     
     char Estado2;
     char CodigoCarta2[4];
@@ -29,7 +28,7 @@ int main() {
     int pontosTuristicos2;
     float DensidadePopulacional2;
     double PibPerCapita2;
-    float SuperPoder2;
+    
 
     printf("Bem Vindo ao Jogo De Cartas!!!: \n");
 
@@ -59,11 +58,6 @@ int main() {
  
     printf("Densidade Populacional: %2.f\n", DensidadePopulacional1);
     printf("Pib Per Capita:R$ %.2lf bilhões\n ", PibPerCapita1);
-    
-    //SUPER PODER
-
-    //SuperPoder1 = populacao1 + areakm1 + pib1 + DensidadePopulacional1;
-    //printf("Você Ganhou Super Poder De: %2.f PONTOS\n ",  SuperPoder1);
     
     printf("------------------------------------------------------------\n");                                                                                                      
     //CADASTRO SEGUNDA CARTA
@@ -95,28 +89,28 @@ int main() {
     printf("Densidade Populacional: %2.f\n", DensidadePopulacional2);
     printf("Pib Per Capita:R$ %.2lf bilhões\n ", PibPerCapita2);
 
-    //SUPER PODER SEGUNDA CARTA
-
-    //SuperPoder2 = populacao2 + areakm2 + pib2 + DensidadePopulacional2;
-    //printf("Você Ganhou Super Poder De: %2.f\n ",  SuperPoder2);
-
     //COMPARAÇÃO
 
-    int CartaVencedora;
+    int cartaVencedora;
+    char carta1;
+    char carta2;
+
+    printf("---------------------------------------------------------------------------- \n");
+
+    printf("Resultado Carta1: %d\n", populacao1);
+    printf("Resultado Carta2: %d\n", populacao2);
+
+    printf("---------------------------------------------------------------------------- \n");
 
     if (populacao1 > populacao2){
-        printf("Carta 1 Tem Maior População \n");
+        printf("Carta 1 Venceu \n");
     } else{
-        printf("Carta 2 Tem Maior População \n");
+        printf("Carta 2 Venceu \n");
     }
 
-    printf("---------------------------------------------------------------------------- \N");
-
-    printf("Vencedor é : %s\n", CartaVencedora );
+    printf("---------------------------------------------------------------------------- \n");
 
 
-
-
-    
+  
     return 0;
 }
